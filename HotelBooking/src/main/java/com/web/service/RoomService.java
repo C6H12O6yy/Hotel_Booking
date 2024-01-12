@@ -15,5 +15,9 @@ public interface RoomService {
 	Room addNewRoom(MultipartFile photo, String roomType, BigDecimal roomPrice) throws SerialException, SQLException, IOException;
 
 	List<String> getAllRoomTypes();
+
+	List<Room> getAllRooms();
+
+	byte[] getRoomPhotoByRoomId(Long roomId) throws SQLException;
 	
 }
