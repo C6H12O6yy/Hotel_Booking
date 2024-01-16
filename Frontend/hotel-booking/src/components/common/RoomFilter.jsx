@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const RoomFilter = ({ data, setFilteredData }) => {
   const [filter, setFilter] = useState("");
+
   const handleSelectChange = (e) => {
     const selectedRoomType = e.target.value;
     setFilter(selectedRoomType);
@@ -17,7 +18,7 @@ const RoomFilter = ({ data, setFilteredData }) => {
 
   const roomTypes = ["", ...new Set(data.map((room) => room.roomType))];
   return (
-    <div className="input-group- mb-3">
+    <div className="input-group mb-3">
       <span className="input-group-text" id="room-type-filter">
         Filter rooms by type
       </span>
