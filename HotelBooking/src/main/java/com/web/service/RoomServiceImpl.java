@@ -11,6 +11,7 @@ import javax.sql.rowset.serial.SerialBlob;
 import javax.sql.rowset.serial.SerialException;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.web.exception.InternalServerException;
@@ -20,6 +21,7 @@ import com.web.repository.RoomRepository;
 import lombok.RequiredArgsConstructor;
 
 @Service
+@Transactional
 @RequiredArgsConstructor
 public class RoomServiceImpl implements RoomService{
 	

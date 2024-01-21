@@ -30,7 +30,6 @@ public class BookingResponse {
 	private RoomResponse room;
 
 	public BookingResponse(Long id, LocalDate checkInDate, LocalDate checkOutDate, String bookingConfirmationCode) {
-		super();
 		this.id = id;
 		this.checkInDate = checkInDate;
 		this.checkOutDate = checkOutDate;

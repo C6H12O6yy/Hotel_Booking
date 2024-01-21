@@ -11,4 +11,12 @@ public interface BookedRoomService {
 
 	List<BookedRoom> getAllBookingByRoomId(Long roomId);
 
+	void cancelBooking(Long bookingId);
+
+	String saveBooking(Long roomId, BookedRoom bookingRequest);
+
+	BookedRoom findByBookingConfirmationCode(String confirmationCode);
+
+	List<BookedRoom> getAllBooking();
+
 }
